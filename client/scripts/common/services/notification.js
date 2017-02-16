@@ -13,7 +13,7 @@ module.exports = function(app) {
 
         var options = {
             android: {
-                'senderID': '1052982738902',
+                // 'senderID': '1052982738902',
                 // 'icon': 'images/app/logo.png',
                 'iconColor': 'yellow',
                 'vibrate': true,
@@ -26,9 +26,8 @@ module.exports = function(app) {
 
         // console.log('push', push);
 
-
         push.on('registration', function(data) {
-            console.log(data);
+            console.log('registration', data);
         });
 
         push.on('notification', function(data) {
